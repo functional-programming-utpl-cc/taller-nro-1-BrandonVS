@@ -1,0 +1,19 @@
+Pregunta 1:
+val condition1 = (x: String) => x.startsWith("C")
+countries.filter(condition1)
+
+Pregunta 2:
+val condition2 = (x: String) => x.contains("E")
+countries.filter(condition2)
+
+Pregunta 3:
+val condition3 = (x: String) => x.startsWith("E") || x.contains("I")
+countries.filter(condition3)
+
+Pregunta 4:
+val condition4 = (x: String) => x.length > 5
+countries.filter(condition4)
+
+Pregunta 5:
+val condition5 = ((x: Int) => (1 until x).toList.filter(x % _  == 0).sum < x)
+countries.filter(condition5)
